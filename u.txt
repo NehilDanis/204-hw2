@@ -1,0 +1,2 @@
+SELECT FirstName,LastName,City,AddressLine1 WHERE SocialSecurityNumber<2193000
+SELECT FirstName,LastName,City,SocialSecurityNumber WHERE SocialSecurityNumber>2144193194 AND LastName~Ba
