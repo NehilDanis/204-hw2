@@ -14,40 +14,40 @@ public class Sort {
 		 {
 			 int cmp;
 			 if(type=="cid"){
-				 cmp=Customer.BY_CID.compare(a.get(i), v);
+				 cmp=MyComparator.BY_CID.compare(a.get(i), v);
 				 if (cmp < 0) exch(a, lt++, i++);
 				 else if (cmp > 0) exch(a, i, gt--);
 				 else i++;
 			 }
 			 else if(type=="name"){
-				 cmp=Customer.BY_NAME.compare(a.get(i), v);
+				 cmp=MyComparator.BY_NAME.compare(a.get(i), v);
 				 if (cmp < 0) exch(a, lt++, i++);
 				 else if (cmp > 0) exch(a, i, gt--);
 				 else i++;
 			 }
 			 else if(type=="surname"){
-				 cmp=Customer.BY_SURNAME.compare(a.get(i), v);
+				 cmp=MyComparator.BY_SURNAME.compare(a.get(i), v);
 				 if (cmp < 0) exch(a, lt++, i++);
 				 else if (cmp > 0) exch(a, i, gt--);
 				 else i++;
 				 
 			 }
 			 else if(type=="city"){
-				 cmp=Customer.BY_CITY.compare(a.get(i), v);
+				 cmp=MyComparator.BY_CITY.compare(a.get(i), v);
 				 if (cmp < 0) exch(a, lt++, i++);
 				 else if (cmp > 0) exch(a, i, gt--);
 				 else i++;
 				 
 			 }
 			 else if(type=="address"){
-				 cmp=Customer.BY_ADDRESS.compare(a.get(i), v);
+				 cmp=MyComparator.BY_ADDRESS.compare(a.get(i), v);
 				 if (cmp < 0) exch(a, lt++, i++);
 				 else if (cmp > 0) exch(a, i, gt--);
 				 else i++;
 				 
 			 }
 			 else if(type=="ssn"){
-				 cmp=Customer.BY_NAME.compare(a.get(i), v);
+				 cmp=MyComparator.BY_NAME.compare(a.get(i), v);
 				 if (cmp < 0) exch(a, lt++, i++);
 				 else if (cmp > 0) exch(a, i, gt--);
 				 else i++;

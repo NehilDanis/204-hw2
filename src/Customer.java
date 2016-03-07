@@ -1,13 +1,6 @@
 import java.util.Comparator;
 
-public class Customer {
-	
-	public static final Comparator<Customer>BY_CID=new ByCid();
-	public static final Comparator<Customer>BY_NAME =new ByName();
-	public static final Comparator<Customer>BY_SURNAME =new BySurname();
-	public static final Comparator<Customer>BY_CITY =new ByCity();
-	public static final Comparator<Customer>BY_ADDRESS =new ByAddress();
-	public static final Comparator<Customer>BY_SSN=new BySsn();
+public class Customer{
 	
 	private int cid;
 	private String name;
@@ -92,41 +85,7 @@ public class Customer {
 
 
 
-	public static class ByName implements Comparator<Customer>{
-		public int compare(Customer a,Customer b){
-			return a.name.compareToIgnoreCase(b.name);
-		}
-	}
 	
-	public static class BySurname implements Comparator<Customer>{
-		public int compare (Customer a,Customer b){
-			return a.surname.compareTo(b.surname);
-		}
-	}
-	
-	public static class ByCid implements Comparator<Customer>{
-		public int compare (Customer a,Customer b){
-			return a.cid-b.cid;
-		}
-	}
-	
-	public static class BySsn implements Comparator<Customer>{
-		public int compare (Customer a,Customer b){
-			return a.cid-b.cid;
-		}
-	}
-	
-	public static class ByCity implements Comparator<Customer>{
-		public int compare (Customer a,Customer b){
-			return a.city.compareTo(b.city);
-		}
-	}
-	
-	public static class ByAddress implements Comparator<Customer>{
-		public int compare (Customer a,Customer b){
-			return a.address.compareTo(b.address);
-		}
-	}
 	
 	public static int compareTo(String a,String b){
 		System.out.println("edrtfghkıj");
@@ -145,8 +104,6 @@ public class Customer {
 		if(a>b)return 1;
 		else if(a<b)return -1;
 		return 0;
-	}
-	
-	
+	}	
 	
 }
