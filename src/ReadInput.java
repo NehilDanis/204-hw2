@@ -30,10 +30,10 @@ public class ReadInput {
                 ssnOrdered.add(cstmr);
             }
             
-            System.out.println(nameOrdered.toString());
+            System.out.println(cityOrdered.toString());
             System.out.println("--------------------------");
-            Sort.sort(nameOrdered, 0, nameOrdered.size()-1,"name");
-            System.out.println(nameOrdered.toString());
+            Sort.sort(cityOrdered, 0, cityOrdered.size()-1,"city");
+            System.out.println(cityOrdered.toString());
             
             
             in.close();
